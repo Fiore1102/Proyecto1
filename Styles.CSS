@@ -1,214 +1,114 @@
-.desktop {
-    /* Encriptador - 1 Desktop */
-
-
-position: relative;
-width: 1440px;
-height: 1024px;
-
-/* Light blue/light-blue-100 */
-
-background: #F3F5FC;
+*{
+    background: rgb(242, 213, 248);
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
 }
 
-.logo {
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+main{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    gap: 40px;
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+    margin-bottom: 50px;
+    margin-left: 80px;
 }
-.logo2 {
-    width: 120px;
-height: 48px;
-flex: none;
-order: 0;
-flex-grow: 0;
+
+.text-area{
+    border: none;
+    color:rgb(127, 13, 235);
+    margin-top: 90px;
+    text-transform: lowercase;
 }
-.vector {
-    position: absolute;
-    width: 31.09px;
-    height: 48px;
-    left: 44px;
-    top: 0px;
+.text-area:focus{
+    background-color: rgb(233, 179, 206);
+    outline: none;
     
 }
 
-.letra {
-    font-size: 24px;
-    color: #0A3871;
+::placeholder {color: rgb(204, 169, 236);}
+.textArea:focus{
+    outline: none;
 }
 
-.frame3 {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-
-position: absolute;
-width: 680px;
-height: 67px;
-left: 240px;
-top: 885px;
+.mensaje{
+    background: white;
+    background-image: url("Imagenes/Muñeco.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: rgb(148, 85, 211);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
 }
 
-.button {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-width: 328px;
-height: 67px;
-background: #0A3871;
-border-radius: 24px;
-flex: none;
-order: 0;
-flex-grow: 0;
+.mensaje:focus {
+    outline: none;
 }
 
-.buttonText {
-width: 280px;
-height: 19px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-/* White */
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 1;
+.botones{
+    display: flex;
+    margin-top: 18px;
 }
 
-.button2 {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-width: 328px;
-height: 67px;
-background: #D8DFE8;
-border: 1px solid #0A3871;
-border-radius: 24px;
-flex: none;
-order: 1;
-flex-grow: 0;
-}
-
-.buttonText2 {
-    /* Button */
-
-
-width: 280px;
-height: 19px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-/* Dark blue/dark-blue-300 */
-
-color: #0A3871;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 1;
-}
-
-.frame1 {
-/* Frame 1 */
-
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 229px;
-height: 18px;
-left: 240px;
-top: 851px;
+.btn-desencriptar:hover{
+box-shadow: 0 0.5em 0.5em 0.5em rgb(209, 103, 209); 
 
 }
 
-.circle {
-    /* bi:exclamation-circle-fill */
-
-
-width: 16px;
-height: 16px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-.group {
-    /* Group */
-
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+.btn-encriptar:hover{
+box-shadow: 0 0.5em 0.5em 0.5em rgb(209, 103, 209);
 }
 
-.textCircle {
-    /* Solo letras minúsculas y sin acentos */
-
-
-width: 205px;
-height: 18px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-/* identical to box height, or 18px */
-
-
-/* Gray/gray-400 */
-
-color: #495057;
-
-opacity: 0.8;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+.btn-desencriptar{
+    border: 1px solid rgb(202, 159, 240);
+    border-radius: 24px;
+    color: rgb(211, 122, 238);
+    color: rgb(211, 122, 238);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
 }
+
+.btn-encriptar{
+    border: 1px solid rgb(202, 159, 240);
+    border-radius: 24px;
+    color: rgb(211, 122, 238);
+    color: rgb(211, 122, 238);
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar{
+    
+    border: 1px solid rgb(202, 159, 240);
+    border-radius: 24px;
+    color: rgb(211, 122, 238);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    top: 45%;
+    width: 328px;
+    
+}
+.copiar:hover{
+    box-shadow: 0 0.5em 0.5em 0.5em rgb(209, 103, 209);
+}
+
+.información{
+    color: rgb(131, 10, 245);
+    font-size: 18px;
+}
+
